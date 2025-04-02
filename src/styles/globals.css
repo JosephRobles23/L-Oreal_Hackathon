@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 30% 98%;
+    --foreground: 142 22% 22%;
+
+    --card: 60 30% 98%;
+    --card-foreground: 142 22% 22%;
+
+    --popover: 60 30% 98%;
+    --popover-foreground: 142 22% 22%;
+
+    --primary: 142 22% 22%;
+    --primary-foreground: 60 30% 98%;
+
+    --secondary: 85 12% 62%;
+    --secondary-foreground: 142 22% 22%;
+
+    --muted: 85 12% 95%;
+    --muted-foreground: 142 10% 40%;
+
+    --accent: 85 12% 90%;
+    --accent-foreground: 142 22% 22%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 60 30% 98%;
+
+    --border: 142 22% 90%;
+    --input: 142 22% 90%;
+    --ring: 142 22% 22%;
+
+    --radius: 0.5rem;
+
+    /* Garnier brand colors */
+    --garnier-green: 142 22% 22%;
+    --garnier-light-beige: 60 30% 98%;
+    --garnier-brown: 18 45% 43%;
+    --garnier-gold: 43 62% 53%;
+    --garnier-green-light: 166 50% 52%;
+    --garnier-beige: 37 55% 74%;
+    --garnier-light-green: 96 20% 82%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Load Gotham font family */
+@font-face {
+  font-family: 'GothamSSm';
+  src: url('/fonts/GothamSSm-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamSSm';
+  src: url('/fonts/GothamSSm-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamSSm';
+  src: url('/fonts/GothamSSm-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamSSm';
+  src: url('/fonts/GothamSSm-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .container-garnier {
+    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+  }
+}
