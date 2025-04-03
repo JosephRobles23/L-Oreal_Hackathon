@@ -7,7 +7,7 @@ import ChatWidget from "../components/ChatWidget";
 import { FaWhatsapp } from "react-icons/fa"; // Asegúrate de instalar react-icons
 
 export const metadata: Metadata = {
-  title: "Productos de cuidado del cabello y cuidado de la piel | Garnier",
+  title: "Garnier",
   description:
     "Garnier ha formulado productos para el cuidado de la piel, coloración, tintes y cuidado del cabello, desodorantes y antitranspirantes para mujer y hombre.",
 };
